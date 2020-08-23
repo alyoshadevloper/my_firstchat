@@ -2,6 +2,15 @@ doctype html
 html
   head
     title= title
+    link(rel="stylesheet" href="/semantic/dist/semantic.min.css")
     link(rel='stylesheet', href='/stylesheets/style.css')
-  body
-    block content
+  body(ng-app='user')
+
+   block content 
+   block java
+       script(src='/socket.io/socket.io.js')
+       script(src='/angular/angular.min.js')
+       script(src='/javascripts/scripts.js')
+       script(src='/javascripts/services/indexFactory.js')
+       script(src='/javascripts/controller/index_contorl.js')
+   
